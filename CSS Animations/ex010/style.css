@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*Especificidade da curva de velocidade da animação*/
+
+p{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 12px;
+    text-align: justify;
+}
+div {
+    width: 100px;
+    height: 50px;
+    background-color: #1D22FF;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  
+  #div1 {animation-timing-function: linear;}
+  #div2 {animation-timing-function: ease;}
+  #div3 {animation-timing-function: ease-in;}
+  #div4 {animation-timing-function: ease-out;}
+  #div5 {animation-timing-function: ease-in-out;}
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+  }

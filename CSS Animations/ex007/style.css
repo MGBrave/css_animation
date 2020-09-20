@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/*Executar animação em direção reversa ou ciclos alternados
+A animation-directionpropriedade especifica se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados.
+
+A propriedade animation-direction pode ter os seguintes valores:
+
+normal- A animação é reproduzida normalmente (para frente). Este é o padrão
+reverse - A animação é reproduzida na direção reversa (para trás)
+alternate - A animação é reproduzida primeiro para a frente, depois para trás
+alternate-reverse - A animação é reproduzida primeiro para trás e depois para a frente*/
+
+.cub-1{
+    width: 300px;
+    height: 300px;
+    background-color: #4066FF;
+    position: relative;
+    animation-name: cub-1;
+    animation-duration: 4s;
+    animation-direction: reverse;
+}
+
+@keyframes cub-1 {
+   0%{background-color: #92FF12; left:0px; top:0px;}
+   25%{background-color:#FFAC0A; left:850px; top:0px;}
+   50%{background-color: #E81815; left:850px; top:200px;}
+   75%{background-color: #540AFF; left:0px; top:200px;}
+   100%{background-color: #21EDFB; left:0px; top:0px;}
+}

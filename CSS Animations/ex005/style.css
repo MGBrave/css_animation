@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*Definir quantas vezes uma animação deve ser executada
+A animation-iteration-countpropriedade especifica o número de vezes que uma animação deve ser executada.*/
+.cub-1{
+    width: 300px;
+    height: 300px;
+    background-color: #4066FF;
+    position: relative;
+    animation-name: cub-1;
+    animation-duration: 4s;
+    animation-iteration-count: 6;
+}
+
+@keyframes cub-1 {
+   0%{background-color: #4066FF; left:0px; top:0px;}
+   25%{background-color: #F6FF08; left:850px; top:0px;}
+   50%{background-color: #FF7A17; left:850px; top:200px;}
+   75%{background-color: #2EE892; left:0px; top:200px;}
+   100%{background-color: #E82ED1; left:0px; top:0px;}
+}
