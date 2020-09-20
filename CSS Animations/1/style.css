@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+
+
+.cub-1{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    animation-name: cub-1;
+    animation-duration: 5s;
+}
+
+@keyframes cub-1 {
+    from {background-color: rgb(13, 21, 242);}
+    to{background-color: rgb(244, 244, 22);}
+}
